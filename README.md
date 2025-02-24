@@ -94,8 +94,8 @@ We welcome contributions to improve the functionality and robustness of this pro
 1. **Fork the Repository**
 
    ```bash
-   git clone https://github.com/your-username/openwebui-proxy-server.git
-   cd openwebui-proxy-server
+   git clone https://github.com/uwzis/openwebuiapi-proxy-service.git
+   cd openwebuiapi-proxy-service
    ```
 
 2. **Create a New Branch**
