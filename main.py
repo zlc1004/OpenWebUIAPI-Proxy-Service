@@ -1,10 +1,11 @@
 from flask import Flask, request, jsonify
 import requests
+import os
 
 app = Flask(__name__)
 
 # Configuration for OpenWebUI
-OPENWEBUI_BASE_URL = "YOUR_OPENWEBUI_URL"
+OPENWEBUI_BASE_URL = os.getenv("OPENWEBUI_BASE_URL", "host.docker.internal:5000")
 
 @app.route('/v1/models', methods=['GET'])
 def get_models():
