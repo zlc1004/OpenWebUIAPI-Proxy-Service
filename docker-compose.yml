@@ -5,4 +5,4 @@ services:
     ports:
       - 5001:5001
     environment:
-      - OPENWEBUI_BASE_URL="host.docker.internal:5000"
+      - OPENWEBUI_BASE_URL=host.docker.internal:5000
