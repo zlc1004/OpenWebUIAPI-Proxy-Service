@@ -18,4 +18,4 @@ RUN --mount=type=cache,target=/root/.cache/pip \
 USER appuser
 COPY . .
 EXPOSE 5001
-CMD gunicorn 'main:app' --bind=0.0.0.0:5001
+CMD gunicorn 'main:app' --bind=0.0.0.0:5001 --timeout 30000
