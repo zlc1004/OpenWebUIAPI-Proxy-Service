@@ -45,7 +45,7 @@ def chat_completions():
     }
     
     try:
-        response = requests.post(f"{OPENWEBUI_BASE_URL}/api/chat/completions", headers=headers, json=openwebui_payload, timeout=120)  # Increased to 120 seconds
+        response = requests.post(f"{OPENWEBUI_BASE_URL}/api/chat/completions", headers=headers, json=openwebui_payload, timeout=1200)  # Increased to 120 seconds
         
         if response.status_code == 200:
             return jsonify(response.json())
