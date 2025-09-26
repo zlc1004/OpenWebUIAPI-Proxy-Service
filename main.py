@@ -17,7 +17,7 @@ def get_models():
     }
     
     try:
-        response = requests.get(f"{OPENWEBUI_BASE_URL}/api/models", headers=headers, timeout=30)
+        response = requests.get(f"{OPENWEBUI_BASE_URL}/api/models", headers=headers, timeout=1200)
         
         if response.status_code == 200:
             return jsonify(response.json())
